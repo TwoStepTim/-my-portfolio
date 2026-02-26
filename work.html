@@ -1,75 +1,299 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Work | Timothy Mims</title>
+  <title>Projects | Timothy Mims</title>
 
+  <meta name="description" content="Projects by Timothy Mims — e-commerce website, Boy Scouts client website, and React messaging app case-study summaries." />
+
+  <!-- Bootstrap CSS -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     rel="stylesheet"
   />
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-nav">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">TIMOTHY MIMS</a>
-    <div class="collapse navbar-collapse show">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="work.html">Projects</a></li>
-      </ul>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-nav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">TIMOTHY MIMS</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="work.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!-- WORK SECTION -->
-<section class="section-padding bg-dark text-light">
-  <div class="container">
-    <h1 class="mb-4 text-center">My Work</h1>
+  <!-- PAGE HERO -->
+  <header class="hero-section">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7 text-center text-lg-start">
+          <p class="text-uppercase small text-muted mb-2">Projects</p>
+          <h1 class="display-5 fw-bold mb-3">Project Case Study Highlights</h1>
+          <p class="hero-text mb-4">
+            Below are three projects that show my range — from structured layouts and conversion-focused design,
+            to client work, to interactive application development.
+          </p>
 
-    <div class="row g-4">
+          <div class="d-flex gap-2 justify-content-center justify-content-lg-start flex-wrap">
+            <a href="#ecommerce" class="btn btn-light">E-Commerce</a>
+            <a href="#boyscouts" class="btn btn-outline-light">Boy Scouts</a>
+            <a href="#reactapp" class="btn btn-outline-light">React App</a>
+          </div>
+        </div>
 
-      <!-- PROJECT CARD -->
-      <div class="col-md-4">
-        <div class="project-card">
-          <div class="project-image"></div>
-          <h5>E-Commerce Website</h5>
-          <p>A modern online store focused on usability and conversion.</p>
-          <a href="#" class="btn btn-sm btn-outline-light">View Project</a>
+        <div class="col-lg-5">
+          <div class="ph ph-hero"></div>
+          <p class="small text-muted mt-2 mb-0">Projects hero placeholder</p>
         </div>
       </div>
-
-      <div class="col-md-4">
-        <div class="project-card">
-          <div class="project-image"></div>
-          <h5>Boy Scouts Website</h5>
-          <p>A client project designed for clarity, trust, and usability.</p>
-          <a href="#" class="btn btn-sm btn-outline-light">View Project</a>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="project-card">
-          <div class="project-image"></div>
-          <h5>React Messaging App</h5>
-          <p>A real-time messaging app built with React.</p>
-          <a href="#" class="btn btn-sm btn-outline-light">View Project</a>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
+  </header>
 
-<footer class="footer text-center">
-  <div class="container">
-    <p>© 2026 Timothy Mims</p>
-  </div>
-</footer>
+  <!-- PROJECT 1 -->
+  <section id="ecommerce" class="section-padding bg-dark text-light">
+    <div class="container">
+      <div class="section-panel">
 
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <p class="text-uppercase small text-muted mb-2">Project 01</p>
+            <h2 class="mb-3">E-Commerce Website</h2>
+            <p class="lead mb-3">A modern store layout focused on clarity, usability, and conversion-friendly structure.</p>
+
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge text-bg-dark border border-secondary">UI/UX</span>
+              <span class="badge text-bg-dark border border-secondary">Responsive Layout</span>
+              <span class="badge text-bg-dark border border-secondary">Product Pages</span>
+              <span class="badge text-bg-dark border border-secondary">Checkout Flow</span>
+            </div>
+
+            <p class="text-muted">
+              The goal of this project was to design a clean and organized shopping experience that helps users
+              find products quickly and feel confident checking out. I focused heavily on spacing, hierarchy,
+              and making calls-to-action obvious without feeling “salesy.”
+            </p>
+
+            <div class="row g-3 mt-3">
+              <div class="col-md-6">
+                <div class="skill-card">
+                  <h6 class="mb-2">What I Built</h6>
+                  <ul class="skill-list">
+                    <li>Homepage product sections</li>
+                    <li>Product card layout + UI pattern</li>
+                    <li>Product detail page structure</li>
+                    <li>Mobile-first responsiveness</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="skill-card">
+                  <h6 class="mb-2">What It Shows</h6>
+                  <ul class="skill-list">
+                    <li>Conversion-focused layout</li>
+                    <li>Clear navigation structure</li>
+                    <li>Visual hierarchy</li>
+                    <li>Design consistency</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex gap-2 flex-wrap mt-4">
+              <a href="#" class="btn btn-light">Live Demo (Soon)</a>
+              <a href="#" class="btn btn-outline-light">GitHub (Soon)</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="ph ph-hero"></div>
+            <p class="small text-muted mt-2 mb-0">E-commerce screenshot placeholder</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT 2 -->
+  <section id="boyscouts" class="section-padding bg-dark text-light">
+    <div class="container">
+      <div class="section-panel">
+
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6 order-2 order-lg-1">
+            <div class="ph ph-hero"></div>
+            <p class="small text-muted mt-2 mb-0">Boy Scouts website screenshot placeholder</p>
+          </div>
+
+          <div class="col-lg-6 order-1 order-lg-2">
+            <p class="text-uppercase small text-muted mb-2">Project 02</p>
+            <h2 class="mb-3">Boy Scouts Client Website</h2>
+            <p class="lead mb-3">A client-focused website built for clarity, trust, and simple navigation.</p>
+
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge text-bg-dark border border-secondary">Client Work</span>
+              <span class="badge text-bg-dark border border-secondary">Information Architecture</span>
+              <span class="badge text-bg-dark border border-secondary">Accessibility</span>
+              <span class="badge text-bg-dark border border-secondary">Mobile Friendly</span>
+            </div>
+
+            <p class="text-muted">
+              This project required designing for a specific audience: parents, scouts, and potential new members.
+              The site needed to communicate trust quickly and make key information easy to find — meeting times,
+              leadership contacts, joining steps, and troop identity.
+            </p>
+
+            <div class="row g-3 mt-3">
+              <div class="col-md-6">
+                <div class="skill-card">
+                  <h6 class="mb-2">Problem</h6>
+                  <ul class="skill-list">
+                    <li>Content needed better structure</li>
+                    <li>Parents needed quick answers</li>
+                    <li>Site needed modern credibility</li>
+                    <li>Clear calls-to-action</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="skill-card">
+                  <h6 class="mb-2">Solution</h6>
+                  <ul class="skill-list">
+                    <li>Simple navigation</li>
+                    <li>Clear info sections</li>
+                    <li>Consistent layout system</li>
+                    <li>Mobile-first design</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex gap-2 flex-wrap mt-4">
+              <a href="#" class="btn btn-light">Live Site (Soon)</a>
+              <a href="#" class="btn btn-outline-light">Case Notes (Soon)</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT 3 -->
+  <section id="reactapp" class="section-padding bg-dark text-light">
+    <div class="container">
+      <div class="section-panel">
+
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <p class="text-uppercase small text-muted mb-2">Project 03</p>
+            <h2 class="mb-3">React Messaging App</h2>
+            <p class="lead mb-3">An interactive messaging UI built with React and component-based structure.</p>
+
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge text-bg-dark border border-secondary">React</span>
+              <span class="badge text-bg-dark border border-secondary">Components</span>
+              <span class="badge text-bg-dark border border-secondary">UI State</span>
+              <span class="badge text-bg-dark border border-secondary">Interactivity</span>
+            </div>
+
+            <p class="text-muted">
+              This project demonstrates my ability to build interactive user interfaces. I focused on clean component
+              structure, readable UI patterns, and a layout that feels like a real messaging product. The goal was to
+              strengthen my skills in front-end logic and state-driven UI updates.
+            </p>
+
+            <div class="row g-3 mt-3">
+              <div class="col-md-6">
+                <div class="skill-card">
+                  <h6 class="mb-2">Key Features</h6>
+                  <ul class="skill-list">
+                    <li>Message list UI pattern</li>
+                    <li>Conversation layout</li>
+                    <li>Input + send flow</li>
+                    <li>Reusable components</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="skill-card">
+                  <h6 class="mb-2">What I Learned</h6>
+                  <ul class="skill-list">
+                    <li>Component organization</li>
+                    <li>State-driven rendering</li>
+                    <li>UI consistency</li>
+                    <li>Designing app-like layouts</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex gap-2 flex-wrap mt-4">
+              <a href="#" class="btn btn-light">Demo (Soon)</a>
+              <a href="#" class="btn btn-outline-light">GitHub (Soon)</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="ph ph-hero"></div>
+            <p class="small text-muted mt-2 mb-0">React app screenshot placeholder</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-padding bg-dark text-light">
+    <div class="container">
+      <div class="section-panel text-center">
+        <p class="text-uppercase small text-muted mb-2">Next Step</p>
+        <h2 class="mb-3">Want to Work Together?</h2>
+        <p class="text-muted mb-4">
+          If you’re looking for someone who can design clean interfaces and build responsive, modern web experiences,
+          I’d love to connect.
+        </p>
+        <div class="d-flex justify-content-center gap-2 flex-wrap">
+          <a href="mailto:tjmims33@gmail.com" class="btn btn-light">Email Me</a>
+          <a href="https://linkedin.com/in/timothy-mims-9b208421a/" target="_blank" rel="noopener" class="btn btn-outline-light">LinkedIn</a>
+          <a href="resume.html" class="btn btn-outline-light">Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer text-center">
+    <div class="container">
+      <p class="mb-1">© 2026 Timothy Mims</p>
+      <p class="mb-0">
+        <a class="learn-more" href="index.html#contact">Contact</a>
+        <span class="text-muted"> • </span>
+        <a class="learn-more" href="resume.html">Resume</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+```

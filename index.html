@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Timothy Mims | Portfolio</title>
 
+  <meta name="description" content="Timothy Mims — Web Developer & Designer. Clean, user-first websites and applications with modern UI and responsive design." />
+
   <!-- Bootstrap CSS -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -16,67 +18,259 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-nav">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">TIMOTHY MIMS</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-nav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">TIMOTHY MIMS</a>
 
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="work.html">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Resume</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<!-- HERO -->
-<header class="hero-section d-flex align-items-center">
-  <div class="container text-center text-md-start">
-    <h1 class="display-4 fw-bold">Hi, I'm Timothy Mims</h1>
-    <p class="lead">Web Developer & Designer</p>
-    <p class="hero-text">
-      I build clean, user-first digital experiences that solve real problems.
-    </p>
-    <a href="work.html" class="btn btn-light me-2">View My Work</a>
-    <a href="#" class="btn btn-outline-light">Contact Me</a>
-  </div>
-</header>
-
-<!-- ABOUT PREVIEW -->
-<section class="section-padding bg-dark text-light">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-4 text-center">
-        <div class="avatar-placeholder"></div>
-      </div>
-      <div class="col-md-8">
-        <h2>About Me</h2>
-        <p>
-          I’m a developer focused on building purposeful, clean websites and applications.
-          I enjoy turning ideas into real, functional digital products.
-        </p>
-        <a href="#" class="text-decoration-none text-light fw-bold">
-          More About Me →
-        </a>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+        </ul>
       </div>
     </div>
-  </div>
-</section>
+  </nav>
 
-<!-- FOOTER -->
-<footer class="footer text-center">
-  <div class="container">
-    <p class="mb-1">© 2026 Timothy Mims</p>
-    <p>Email • GitHub • LinkedIn</p>
-  </div>
-</footer>
+  <!-- HERO -->
+  <header class="hero-section">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7 text-center text-lg-start">
+          <p class="text-uppercase small text-muted mb-2">Web Developer & Designer</p>
+          <h1 class="display-4 fw-bold mb-3">Hi, I’m Timothy Mims.</h1>
+          <p class="lead mb-3">I build clean, user-first digital experiences that solve real problems.</p>
+          <p class="hero-text mb-4">
+            I focus on modern UI, responsive layouts, and building websites and apps that feel simple, fast, and intentional.
+          </p>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+          <div class="d-flex gap-2 justify-content-center justify-content-lg-start flex-wrap">
+            <a href="#projects" class="btn btn-light">View My Work</a>
+            <a href="#contact" class="btn btn-outline-light">Contact Me</a>
+            <a href="resume.html" class="btn btn-outline-light">Resume</a>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <!-- Hero image placeholder (NOT headshot) -->
+          <div class="ph ph-hero"></div>
+          <p class="small text-muted mt-2 mb-0">Hero image placeholder</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section-padding bg-dark text-light">
+    <div class="container">
+      <div class="section-panel">
+        <div class="row align-items-center g-4">
+          <div class="col-md-4 text-center">
+            <img
+              src="img/headshot-TM.JPG"
+              alt="Professional headshot of Timothy Mims"
+              class="about-headshot"
+            />
+          </div>
+
+          <div class="col-md-8">
+            <p class="text-uppercase small text-muted mb-2">About</p>
+            <h2 class="mb-3">Who I Am</h2>
+
+            <p class="lead mb-3">
+              I build clean, user-first websites and applications that help brands get real results.
+            </p>
+
+            <p class="text-muted mb-4">
+              I’m a web developer and designer focused on modern UI, responsive design, and building digital experiences
+              that are easy to use and built with purpose. My work includes e-commerce, content-driven sites, client projects,
+              and interactive web apps—so you can see both my design thinking and technical skill.
+            </p>
+
+            <div class="d-flex gap-2 flex-wrap">
+              <a href="#projects" class="btn btn-light">See My Work</a>
+              <a href="work.html" class="btn btn-outline-light">Projects Page</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS PREVIEW (Learn More) -->
+  <section id="projects" class="section-padding bg-dark text-light">
+    <div class="container">
+      <div class="section-panel">
+        <div class="d-flex justify-content-between align-items-end flex-wrap gap-2 mb-4">
+          <div>
+            <p class="text-uppercase small text-muted mb-2">Selected Work</p>
+            <h2 class="mb-0">A Snapshot of What I Build</h2>
+          </div>
+          <a href="work.html" class="btn btn-outline-light btn-sm">View All Projects</a>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <div class="project-card h-100">
+              <div class="ph ph-card mb-3"></div>
+              <h5 class="mb-2">E-Commerce Website</h5>
+              <p class="text-muted mb-3">
+                A modern store layout focused on product clarity, clean UI, and conversion-friendly structure.
+              </p>
+              <a href="work.html" class="learn-more">Learn More →</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="project-card h-100">
+              <div class="ph ph-card mb-3"></div>
+              <h5 class="mb-2">Boy Scouts Client Website</h5>
+              <p class="text-muted mb-3">
+                A client project designed for trust, easy navigation, and clear information for parents and scouts.
+              </p>
+              <a href="work.html" class="learn-more">Learn More →</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="project-card h-100">
+              <div class="ph ph-card mb-3"></div>
+              <h5 class="mb-2">React Messaging App</h5>
+              <p class="text-muted mb-3">
+                An interactive app interface built with React using component structure and dynamic UI updates.
+              </p>
+              <a href="work.html" class="learn-more">Learn More →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4 d-flex gap-2 flex-wrap">
+          <a href="work.html" class="btn btn-light">Explore Projects</a>
+          <a href="resume.html" class="btn btn-outline-light">See Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section-padding bg-dark text-light">
+    <div class="container">
+      <div class="section-panel">
+        <p class="text-uppercase small text-muted mb-2">Skills</p>
+        <h2 class="mb-4">What I Work With</h2>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="skill-card">
+              <h5 class="mb-3">Front-End</h5>
+              <ul class="skill-list">
+                <li>HTML5 / CSS3</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>Responsive Design</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="skill-card">
+              <h5 class="mb-3">Development</h5>
+              <ul class="skill-list">
+                <li>React</li>
+                <li>React Native</li>
+                <li>Basic State / UI Logic</li>
+                <li>APIs (building + learning)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="skill-card">
+              <h5 class="mb-3">Design + Business</h5>
+              <ul class="skill-list">
+                <li>UI/UX Layout + Hierarchy</li>
+                <li>Content Structure</li>
+                <li>SEO Basics</li>
+                <li>Client Communication</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <p class="text-muted mb-0">
+            Want a deeper look? Check out the <a class="learn-more" href="resume.html">resume</a> or the full <a class="learn-more" href="work.html">project list</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section-padding bg-dark text-light">
+    <div class="container">
+      <div class="section-panel">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <p class="text-uppercase small text-muted mb-2">Contact</p>
+            <h2 class="mb-3">Let’s Connect</h2>
+            <p class="text-muted mb-4">
+              I’m open to internships, freelance opportunities, and collaboration. Email is best, and LinkedIn works great too.
+            </p>
+
+            <div class="d-flex gap-2 flex-wrap mb-4">
+              <a class="btn btn-light" href="mailto:tjmims33@gmail.com">Email Me</a>
+              <a class="btn btn-outline-light" href="https://linkedin.com/in/timothy-mims-9b208421a/" target="_blank" rel="noopener">
+                LinkedIn
+              </a>
+              <a class="btn btn-outline-light" href="resume.html">View Resume</a>
+            </div>
+
+            <div class="contact-lines">
+              <div class="mb-2">
+                <span class="text-muted">Email:</span>
+                <a href="mailto:tjmims33@gmail.com">tjmims33@gmail.com</a>
+              </div>
+              <div>
+                <span class="text-muted">LinkedIn:</span>
+                <a href="https://linkedin.com/in/timothy-mims-9b208421a/" target="_blank" rel="noopener">
+                  linkedin.com/in/timothy-mims-9b208421a/
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="ph ph-contact"></div>
+            <p class="small text-muted mt-2 mb-0">Contact image placeholder</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer text-center">
+    <div class="container">
+      <p class="mb-1">© 2026 Timothy Mims</p>
+      <p class="mb-0">
+        <a class="learn-more" href="mailto:tjmims33@gmail.com">Email</a>
+        <span class="text-muted"> • </span>
+        <a class="learn-more" href="https://linkedin.com/in/timothy-mims-9b208421a/" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="text-muted"> • </span>
+        <a class="learn-more" href="resume.html">Resume</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+```
