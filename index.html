@@ -2,275 +2,452 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Timothy Mims | Portfolio</title>
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <meta name="description" content="Timothy Mims — Web Developer & Designer. Clean, user-first websites and applications with modern UI and responsive design." />
-
-  <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="img/TimothyMims.png">
+
+
+  
 </head>
 <body>
-
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-nav">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">TIMOTHY MIMS</a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
+  <main class="desktop">
+    <div class="desktop-grid">
+        <button class="desktop-icon open-window" data-window="settingsWindow" type="button">
+        <div class="icon-box icon-settings">S</div>
+        <span>Settings</span>
+      </button>
+      <button class="desktop-icon open-window" data-window="aboutWindow" type="button">
+        <div class="icon-box icon-about">A</div>
+        <span>About Me</span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Work</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-        </ul>
-      </div>
+      <button class="desktop-icon open-window" data-window="projectsWindow" type="button">
+        <div class="icon-box icon-projects">P</div>
+        <span>Projects</span>
+      </button>
+
+      <button class="desktop-icon open-window" data-window="skillsWindow" type="button">
+        <div class="icon-box icon-skills">S</div>
+        <span>Skills</span>
+      </button>
+
+      <button class="desktop-icon open-window" data-window="contactWindow" type="button">
+        <div class="icon-box icon-contact">C</div>
+        <span>Contact</span>
+      </button>
+
+      <button class="desktop-icon open-window" data-window="resumeWindow" type="button">
+        <div class="icon-box icon-resume">R</div>
+        <span>Resume</span>
+      </button>
+
+      <button class="desktop-icon open-window" data-window="welcomeWindow" type="button">
+        <div class="icon-box icon-folder">W</div>
+        <span>Welcome</span>
+      </button>
     </div>
-  </nav>
 
-  <!-- HERO -->
-  <header class="hero-section">
-    <div class="container">
-      <div class="row align-items-center g-4">
-        <div class="col-lg-7 text-center text-lg-start">
-          <p class="text-uppercase small text-muted mb-2">Web Developer & Designer</p>
-          <h1 class="display-4 fw-bold mb-3">Hi, I’m Timothy Mims.</h1>
-          <p class="lead mb-3">I build clean, user-first digital experiences that solve real problems.</p>
-          <p class="hero-text mb-4">
-            I focus on modern UI, responsive layouts, and building websites and apps that feel simple, fast, and intentional.
-          </p>
-
-          <div class="d-flex gap-2 justify-content-center justify-content-lg-start flex-wrap">
-            <a href="#projects" class="btn btn-light">View My Work</a>
-            <a href="#contact" class="btn btn-outline-light">Contact Me</a>
-            <a href="resume.html" class="btn btn-outline-light">Resume</a>
+    <section class="window active" id="welcomeWindow" style="top: 78px; left: 190px; z-index: 10;">
+      <div class="window-bar">
+        <div class="window-left">
+          <div class="window-dots">
+            <span class="window-dot dot-red"></span>
+            <span class="window-dot dot-yellow"></span>
+            <span class="window-dot dot-green"></span>
           </div>
+          <div class="window-title">welcome.txt</div>
         </div>
-
-        <div class="col-lg-5">
-          <!-- Hero image placeholder (NOT headshot) -->
-          <div class="ph ph-hero"></div>
-          <p class="small text-muted mt-2 mb-0">Hero image placeholder</p>
+        <div class="window-actions">
+          <button class="window-btn close-window" data-window="welcomeWindow" type="button">×</button>
         </div>
       </div>
-    </div>
-  </header>
-
-  <!-- ABOUT -->
-  <section id="about" class="section-padding bg-dark text-light">
-    <div class="container">
-      <div class="section-panel">
-        <div class="row align-items-center g-4">
-          <div class="col-md-4 text-center">
-            <img
-              src="img/headshot-TM.JPG"
-              alt="Professional headshot of Timothy Mims"
-              class="about-headshot"
-            />
+      <div class="window-body">
+        <div class="section-label">Desktop Portfolio</div>
+        <h2>Welcome to my desktop portfolio.</h2>
+        <p>
+          I’m Timothy Mims, a frontend-focused web developer and designer based in North Carolina. I build clean websites, brand-focused layouts, and business-minded digital experiences that help companies look stronger and convert better. This desktop layout is meant to feel simple, interactive, and personal, while still being easy enough to build with Bootstrap, CSS, and JavaScript.
+        </p>
+        <div class="row g-3 mt-3">
+          <div class="col-md-6">
+            <div class="info-card">
+              <h3>What I care about</h3>
+              <p>Clean design, strong messaging, better user flow, and websites that support real goals instead of just looking nice.</p>
+            </div>
           </div>
-
-          <div class="col-md-8">
-            <p class="text-uppercase small text-muted mb-2">About</p>
-            <h2 class="mb-3">Who I Am</h2>
-
-            <p class="lead mb-3">
-              I build clean, user-first websites and applications that help brands get real results.
-            </p>
-
-            <p class="text-muted mb-4">
-              I’m a web developer and designer focused on modern UI, responsive design, and building digital experiences
-              that are easy to use and built with purpose. My work includes e-commerce, content-driven sites, client projects,
-              and interactive web apps—so you can see both my design thinking and technical skill.
-            </p>
-
-            <div class="d-flex gap-2 flex-wrap">
-              <a href="#projects" class="btn btn-light">See My Work</a>
-              <a href="work.html" class="btn btn-outline-light">Projects Page</a>
+          <div class="col-md-6">
+            <div class="info-card">
+              <h3>Main focus</h3>
+              <p>I am a front-end developer focused on building clean, modern user interfaces. I prioritize user-first design by creating clear, accessible, and easy-to-navigate digital experiences with a strong sense of purpose.</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PROJECTS PREVIEW (Learn More) -->
-  <section id="projects" class="section-padding bg-dark text-light">
-    <div class="container">
-      <div class="section-panel">
-        <div class="d-flex justify-content-between align-items-end flex-wrap gap-2 mb-4">
-          <div>
-            <p class="text-uppercase small text-muted mb-2">Selected Work</p>
-            <h2 class="mb-0">A Snapshot of What I Build</h2>
+      <section class="window" id="settingsWindow" style="top: 72px; left: 180px; z-index: 10; width: min(900px, calc(100vw - 40px));">
+      <div class="window-bar">
+        <div class="window-left">
+          <div class="window-dots">
+            <span class="window-dot dot-red"></span>
+            <span class="window-dot dot-yellow"></span>
+            <span class="window-dot dot-green"></span>
           </div>
-          <a href="work.html" class="btn btn-outline-light btn-sm">View All Projects</a>
+          <div class="window-title">desktop-settings.html</div>
         </div>
-
-        <div class="row g-5">
-          <div class="col-lg-4">
-            <div class="project-card h-100">
-              <div class="ph ph-card mb-3"></div>
-              <h5 class="mb-2">E-Commerce Website</h5>
-              <p class="text-muted mb-3">
-                A modern store layout focused on product clarity, clean UI, and conversion-friendly structure.
-              </p>
-              <a href="work.html" class="learn-more">Learn More →</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="project-card h-100">
-              <div class="ph ph-card mb-3"></div>
-              <h5 class="mb-2">Boy Scouts Client Website</h5>
-              <p class="text-muted mb-3">
-                A client project designed for trust, easy navigation, and clear information for parents and scouts.
-              </p>
-              <a href="work.html" class="learn-more">Learn More →</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="project-card h-100">
-              <div class="ph ph-card mb-3"></div>
-              <h5 class="mb-2">React Messaging App</h5>
-              <p class="text-muted mb-3">
-                An interactive app interface built with React using component structure and dynamic UI updates.
-              </p>
-              <a href="work.html" class="learn-more">Learn More →</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-4 d-flex gap-2 flex-wrap">
-          <a href="work.html" class="btn btn-light">Explore Projects</a>
-          <a href="resume.html" class="btn btn-outline-light">See Resume</a>
+        <div class="window-actions">
+          <button class="window-btn close-window" data-window="settingsWindow" type="button">×</button>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills" class="section-padding bg-dark text-light">
-    <div class="container">
-      <div class="section-panel">
-        <p class="text-uppercase small text-muted mb-2">Skills</p>
-        <h2 class="mb-4">What I Work With</h2>
-
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="skill-card">
-              <h5 class="mb-3">Front-End</h5>
-              <ul class="skill-list">
-                <li>HTML5 / CSS3</li>
-                <li>JavaScript</li>
-                <li>Bootstrap</li>
-                <li>Responsive Design</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="skill-card">
-              <h5 class="mb-3">Development</h5>
-              <ul class="skill-list">
-                <li>React</li>
-                <li>React Native</li>
-                <li>Basic State / UI Logic</li>
-                <li>APIs (building + learning)</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="skill-card">
-              <h5 class="mb-3">Design + Business</h5>
-              <ul class="skill-list">
-                <li>UI/UX Layout + Hierarchy</li>
-                <li>Content Structure</li>
-                <li>SEO Basics</li>
-                <li>Client Communication</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-4">
-          <p class="text-muted mb-0">
-            Want a deeper look? Check out the <a class="learn-more" href="resume.html">resume</a> or the full <a class="learn-more" href="work.html">project list</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section-padding bg-dark text-light">
-    <div class="container">
-      <div class="section-panel">
-        <div class="row align-items-center g-4">
+      <div class="window-body">
+        <div class="row g-4 hero-grid">
           <div class="col-lg-7">
-            <p class="text-uppercase small text-muted mb-2">Contact</p>
-            <h2 class="mb-3">Let’s Connect</h2>
-            <p class="text-muted mb-4">
-              I’m open to internships, freelance opportunities, and collaboration. Email is best, and LinkedIn works great too.
-            </p>
-
-            <div class="d-flex gap-2 flex-wrap mb-4">
-              <a class="btn btn-light" href="mailto:tjmims33@gmail.com">Email Me</a>
-              <a class="btn btn-outline-light" href="https://linkedin.com/in/timothy-mims-9b208421a/" target="_blank" rel="noopener">
-                LinkedIn
-              </a>
-              <a class="btn btn-outline-light" href="resume.html">View Resume</a>
-            </div>
-
-            <div class="contact-lines">
-              <div class="mb-2">
-                <span class="text-muted">Email:</span>
-                <a href="mailto:tjmims33@gmail.com">tjmims33@gmail.com</a>
-              </div>
-              <div>
-                <span class="text-muted">LinkedIn:</span>
-                <a href="https://linkedin.com/in/timothy-mims-9b208421a/" target="_blank" rel="noopener">
-                  linkedin.com/in/timothy-mims-9b208421a/
-                </a>
-              </div>
+            <div class="hero-intro">
+              <div class="section-label">Desktop Portfolio</div>
+              <h2>Click the desktop icons to open different windows.</h2>
+              <p>
+                This version feels more like an actual computer desktop. Each icon opens its own window, which makes the site more interactive without needing advanced code. It is a better match for a beginner-to-intermediate Bootstrap project because the layout is still simple, but the interaction makes it stand out.
+              </p>
             </div>
           </div>
-
-          <div class="col-lg-5">
-            <div class="ph ph-contact"></div>
-            <p class="small text-muted mt-2 mb-0">Contact image placeholder</p>
+        </div>
           </div>
         </div>
       </div>
+    </section>
+  <section class="window" id="aboutWindow" style="top: 90px; left: 140px; width: min(1050px, calc(100vw - 40px))">
+  <div class="window-bar">
+    <div class="window-left">
+      <div class="window-dots">
+        <span class="window-dot dot-red"></span>
+        <span class="window-dot dot-yellow"></span>
+        <span class="window-dot dot-green"></span>
+      </div>
+      <div class="window-title">about-me.html</div>
     </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer text-center">
-    <div class="container">
-      <p class="mb-1">© 2026 Timothy Mims</p>
-      <p class="mb-0">
-        <a class="learn-more" href="mailto:tjmims33@gmail.com">Email</a>
-        <span class="text-muted"> • </span>
-        <a class="learn-more" href="https://linkedin.com/in/timothy-mims-9b208421a/" target="_blank" rel="noopener">LinkedIn</a>
-        <span class="text-muted"> • </span>
-        <a class="learn-more" href="resume.html">Resume</a>
-      </p>
+    <div class="window-actions">
+      <button class="window-btn close-window" data-window="aboutWindow" type="button">×</button>
     </div>
-  </footer>
+  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <div class="window-body">
+    <div class="row g-4 align-items-start">
+      
+      <div class="col-lg-4">
+        <img src="img/headshot-TM.JPG" alt="Timothy Mims" class="about-photo img-fluid">
+      </div>
+
+      <div class="col-lg-8">
+        <div class="section-label">About</div>
+        <h2>Hey, I’m Tim.</h2>
+        <p>
+          I’m a web developer, designer, and builder who likes making websites that feel clean, modern, and purposeful. A lot of my work sits in the space between design and strategy. I care about how a site looks, but I also care about whether it helps the business or brand actually get results.
+        </p>
+        <p class="mt-3">
+          I lead a lot of the tech and web work for Merit Moving, and I’m also building Circuit Tech Solutions with the goal of creating websites and digital systems that help clients grow. My approach is simple: don’t just sell a website, build something that helps the client communicate clearly, look trustworthy, and move people toward action.
+        </p>
+        <p class="mt-3">
+          I enjoy creative layouts, strong typography, and interfaces with personality, but I still want my work to feel organized and useful. That balance between clean structure and originality is what I try to bring into every project.
+        </p>
+
+        <div class="row g-3 mt-2">
+          <div class="col-md-4">
+            <div class="info-card h-100">
+              <h3>Quick Facts</h3>
+              <p>Based in Raleigh area • Frontend-focused • CEO of Circuit Tech Solutions • Works with Merit Moving • Interested in UI, branding, and business websites</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="info-card h-100">
+              <h3>What I’m building toward</h3>
+              <p>More client work, stronger case studies, better systems, and a portfolio that shows both my visual style and my ability to solve real business problems.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="info-card h-100">
+              <h3>Current style</h3>
+              <p>Clean, modern, slightly bold, and user-first. I like sites that feel polished without feeling overdone.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <section class="window" id="projectsWindow" style="top: 150px; left: 300px; width: min(900px, calc(100vw - 40px));">
+      <div class="window-bar">
+        <div class="window-left">
+          <div class="window-dots">
+            <span class="window-dot dot-red"></span>
+            <span class="window-dot dot-yellow"></span>
+            <span class="window-dot dot-green"></span>
+          </div>
+          <div class="window-title">projects-folder</div>
+        </div>
+        <div class="window-actions">
+          <button class="window-btn close-window" data-window="projectsWindow" type="button">×</button>
+        </div>
+      </div>
+      <div class="window-body">
+        <div class="section-label">Projects</div>
+        <h2>Things I’ve worked on.</h2>
+        <div class="row g-4 mt-1">
+          <div class="col-md-6 col-xl-4">
+            <div class="project-card">
+                <div class="project-thumb">API Project</div>
+                <a href="https://twosteptim.github.io/WeatherApp/" target="_blank" class="project-thumb-link">
+                <img src="img/1555512.png" alt="Weather App preview" class="project-image">
+                </a>
+                <h3 class="project-title-link">Weather App</h3>
+                <p>A weather application that pulls real-time data from an API and displays it in a clean, user-friendly interface.</p>
+                <div class="project-actions">
+                <a href="https://github.com/TwoStepTim/WeatherApp" target="_blank" class="btn btn-outline-secondary">GitHub</a>
+                <a href="https://twosteptim.github.io/WeatherApp/" target="_blank" class="btn btn-primary">Live Demo</a>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div class="project-card">
+                <div class="project-thumb">JavaScript Project</div>
+                <a href="https://twosteptim.github.io/vue-pages/" target="_blank" class="project-thumb-link">
+                <img src="img/565703.png" alt="Random Quote Generator preview" class="project-image">
+                </a>
+                <h3 class="project-title-link">Random Quote Generator</h3>
+                <p>A JavaScript-based app that generates random quotes, helping practice DOM manipulation and dynamic content updates.</p>
+                <div class="project-actions">
+                <a href="https://github.com/TwoStepTim/vue-pages" target="_blank" class="btn btn-outline-secondary">GitHub</a>
+                <a href="https://twosteptim.github.io/vue-pages/" target="_blank" class="btn btn-primary">Live Demo</a>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div class="project-card">
+                <div class="project-thumb">Client Website + SEO</div>
+              <a href="https://www.meritmoving919.com/" target="_blank" class="project-thumb-link">
+                <img src="img/Merit-Moving-3.2 (3).png" alt="Merit Moving project preview" class="project-image" style=" background-color: #008DA2;">
+              </a>
+              <h3 class="project-title-link">Merit Moving</h3>
+              <p>I’ve worked on improving Merit Moving’s website with a focus on trust, clearer structure, better calls to action, and stronger local SEO direction.</p>
+              <div class="project-actions">
+                <a href="https://www.meritmoving919.com/" target="_blank" class="btn btn-primary">Live Demo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+        <div class="project-card">
+            <div class="project-thumb">Organization Website</div>
+            <a href="https://www.scouts253.org/" target="_blank" class="project-thumb-link">
+            <img src="img/Boy-Scout-Logo.png" alt="Boy Scouts Troop 253 project preview" class="project-image">
+            </a>
+            <h3 class="project-title-link">Troop 253 Website</h3>
+            <p>A modern redesign for a Boy Scouts troop focused on providing clear information for parents, new members, and current scouts.</p>
+            <div class="project-actions">
+            <a href="https://www.scouts253.org/" target="_blank" class="btn btn-primary">Live Demo</a>
+            </div>
+        </div>
+    
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div class="project-card">
+                <div class="project-thumb">Web App</div>
+                <a href="https://twosteptim.github.io/Vue.js-Shopping-List-App/" target="_blank" class="project-thumb-link">
+                <img src="img/1413908.png" alt="Shopping List App preview" class="project-image">
+                </a>
+                <h3 class="project-title-link">Shopping List App</h3>
+                <p>A simple web app that allows users to add, manage, and track grocery items, focused on clean UI and basic functionality.</p>
+                <div class="project-actions">
+                <a href="https://github.com/TwoStepTim/Vue.js-Shopping-List-App" target="_blank" class="btn btn-outline-secondary">GitHub</a>
+                <a href="https://twosteptim.github.io/Vue.js-Shopping-List-App/" target="_blank" class="btn btn-primary">Live Demo</a>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div class="project-card">
+                <div class="project-thumb">Brand + Ecommerce</div>
+                <a href="https://generationfaith.world/" target="_blank" class="project-thumb-link">
+                <img src="img/BKGF.png" alt="Generation Faith project preview" class="project-image">
+                </a>
+                <h3 class="project-title-link">Generation Faith</h3>
+                <p>A Christian clothing brand focused on spreading the Gospel through design, combining strong visuals with meaningful messaging.</p>
+                <div class="project-actions">
+                <a href="https://generationfaith.world/" target="_blank" class="btn btn-primary">Live Demo</a>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div class="project-card">
+                <div class="project-thumb">Agency Website</div>
+                <a href="https://www.circuittechsolutions.com/" target="_blank" class="project-thumb-link">
+                <img src="img/Circuit-Logo-EM.png" alt="Circuit Tech Solutions project preview" class="project-image">
+                </a>
+                <h3 class="project-title-link">Circuit Tech Solutions</h3>
+                <p>A business website focused on selling results, not just websites, with clear messaging, strong layout, and client-focused design.</p>
+                <div class="project-actions">
+                <a href="https://www.circuittechsolutions.com/" target="_blank" class="btn btn-primary">Live Demo</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="window" id="skillsWindow" style="top: 190px; left: 140px; width: min(700px, calc(100vw - 40px));">
+      <div class="window-bar">
+        <div class="window-left">
+          <div class="window-dots">
+            <span class="window-dot dot-red"></span>
+            <span class="window-dot dot-yellow"></span>
+            <span class="window-dot dot-green"></span>
+          </div>
+          <div class="window-title">skills.exe</div>
+        </div>
+        <div class="window-actions">
+          <button class="window-btn close-window" data-window="skillsWindow" type="button">×</button>
+        </div>
+      </div>
+      <div class="window-body">
+        <div class="section-label">Skills</div>
+        <h2>Tools and strengths.</h2>
+        <p class="mb-3">My strongest work usually comes from combining design thinking with frontend execution. I like making layouts that feel clean and custom, then using code to bring them to life in a way that still feels practical.</p>
+        <div class="mb-3">
+          <div class="skill-pill">HTML</div>
+          <div class="skill-pill">CSS</div>
+          <div class="skill-pill">JavaScript</div>
+          <div class="skill-pill">Bootstrap</div>
+          <div class="skill-pill">Webflow</div>
+          <div class="skill-pill">Responsive Design</div>
+          <div class="skill-pill">UI / UX Thinking</div>
+          <div class="skill-pill">Brand Presentation</div>
+          <div class="skill-pill">SEO Strategy</div>
+          <div class="skill-pill">Content Structure</div>
+        </div>
+        <div class="row g-3 mt-1">
+          <div class="col-md-6">
+            <div class="skill-card">
+              <h3>Frontend Development</h3>
+              <p>Building pages that are responsive, readable, and visually strong across screen sizes.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-card">
+              <h3>Design + Layout</h3>
+              <p>Using spacing, hierarchy, and typography to make sites feel cleaner and easier to understand.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-card">
+              <h3>Business-Focused Thinking</h3>
+              <p>Thinking past the visuals and asking how the site helps the client build trust, communicate better, and get results.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-card">
+              <h3>Creative Direction</h3>
+              <p>Coming up with concepts that feel more unique than a standard template while still being realistic to build.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="window" id="contactWindow" style="top: 220px; left: 360px; width: min(620px, calc(100vw - 40px));">
+      <div class="window-bar">
+        <div class="window-left">
+          <div class="window-dots">
+            <span class="window-dot dot-red"></span>
+            <span class="window-dot dot-yellow"></span>
+            <span class="window-dot dot-green"></span>
+          </div>
+          <div class="window-title">contact-me.html</div>
+        </div>
+        <div class="window-actions">
+          <button class="window-btn close-window" data-window="contactWindow" type="button">×</button>
+        </div>
+      </div>
+      <div class="window-body">
+        <div class="section-label">Contact</div>
+        <h2>Let’s make something good.</h2>
+        <p>If you want to talk about a website, a redesign, a landing page, or a creative project, this is where you’d reach me. I’m especially interested in work that needs both clean presentation and real business value.</p>
+        <ul class="contact-list mt-3">
+          <li>Email: tjmims33@gmail.com</li>
+          <li>GitHub: https://github.com/TwoStepTim</li>
+          <li>LinkedIn: https://www.linkedin.com/in/timothy-mims-9b208421a/</li>
+        </ul>
+        <div class="row g-3 mt-3">
+          <div class="col-md-6">
+            <div class="contact-card">
+              <h3>Best fit</h3>
+              <p>Business websites, portfolio sites, landing pages, redesigns, and creative brand-focused work.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="contact-card">
+              <h3>What I value</h3>
+              <p>Clear communication, strong direction, and building something that actually serves a purpose.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="window" id="resumeWindow" style="top: 100px; left: 420px; width: min(560px, calc(100vw - 40px));">
+      <div class="window-bar">
+        <div class="window-left">
+          <div class="window-dots">
+            <span class="window-dot dot-red"></span>
+            <span class="window-dot dot-yellow"></span>
+            <span class="window-dot dot-green"></span>
+          </div>
+          <div class="window-title">resume.pdf</div>
+        </div>
+        <div class="window-actions">
+          <button class="window-btn close-window" data-window="resumeWindow" type="button">×</button>
+        </div>
+      </div>
+      <div class="window-body">
+        <div class="section-label">Resume</div>
+        <h2>What belongs in this window.</h2>
+        <div class="resume-card mt-3">
+          <ul class="resume-list">
+            <li><strong>Role direction:</strong> Frontend developer, web designer, or UI-focused web role</li>
+            <li><strong>Education:</strong> Wake Tech coursework and continued frontend practice</li>
+            <li><strong>Experience:</strong> Circuit Tech Solutions, Merit Moving web/marketing work, freelance and concept builds</li>
+            <li><strong>Core tools:</strong> HTML, CSS, JavaScript, Bootstrap, Webflow, GitHub</li>
+            <li><strong>Strengths:</strong> Clean layouts, design presentation, content structure, and business-minded websites</li>
+          </ul>
+        </div>
+        <p class="mt-3">Later, this can become a real downloadable resume section with a button, PDF link, or embedded preview.</p>
+         <div class="resume-actions">
+          <a href="Timothy_Mims_Resume.pdf" target="_blank" class="btn btn-outline-secondary">View Resume</a>
+          <a href="Timothy_Mims_Resume.pdf" download class="btn btn-primary">Download Resume</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="taskbar">
+    <div class="taskbar-inner">
+      <div class="task-left">
+        <button class="start-btn" type="button">Start</button>
+      </div>
+      <div class="task-right">
+        <div class="clock" id="clock">9:41 AM</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
+ 
 </body>
 </html>
-```
