@@ -23,34 +23,7 @@ My experience includes backend development, responsive frontend systems, and mob
 **Frameworks & Tools**
 - React Native
 - Git & GitHub
-- REST APIs
-- [Add database or other tools here]
 
----
-
-## Projects
-
-### Project Name
-**Description:**  
-Short explanation of what the project does and the problem it solves.
-
-**Tech Used:**  
-Python, JavaScript, etc.
-
-Live Demo: [Insert Link]  
-Repository: [Insert Link]
-
----
-
-### Project Name
-**Description:**  
-Short explanation of the project and its purpose.
-
-**Tech Used:**  
-HTML, CSS, JavaScript
-
-Live Demo: [Insert Link]  
-Repository: [Insert Link]
 
 ---
 
